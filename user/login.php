@@ -70,9 +70,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <input type="password" name="password" placeholder="Password" required>
                     <i class='bx bx-lock-alt'></i>
                 </div>
-                <div class="forgot-link">
+                <!-- <div class="forgot-link">
                     <p>Forgot password?</p>     
-                </div>
+                </div> -->
 
                 <button type="submit" class="btn">Login</button>
                 
