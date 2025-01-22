@@ -48,7 +48,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add New Account</title>
     <link rel="stylesheet" href="resources/css/add-user.css">
-    <link rel="stylesheet" href="resources/css/sidebar.css">
 </head>
 <body>
     <!-- Sidebar -->
