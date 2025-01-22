@@ -2,7 +2,7 @@
 // Assuming you have a database connection file included
 include 'connection.php';
 
-// Handle form submission
+// Handle form submission (login)
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -37,9 +37,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
     $conn->close();
 }
+
+
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -103,7 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
 
                 <div class="input-box">
-                    <input type="date" name="birthdate" placeholder="dd/mm/yyyy" required>
+                    <input type="date" name="birtday" placeholder="dd/mm/yyyy" required>
                     <i class='bx bxs-calendar'></i>
                 </div>
 
@@ -120,9 +120,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="toggle-panel toggle-left">
                 <h1>Welcome!</h1>
                 <p>Don't have an account?</p>
-                <a href="signup.php">
-                    <button class="btn register-btn">Register</button>
-                </a>
+
+                <button class="btn register-btn">Register</button>
             </div>
 
             <div class="toggle-panel toggle-right">
