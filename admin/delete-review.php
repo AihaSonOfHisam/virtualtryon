@@ -11,21 +11,28 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $stmt->bind_param("i", $reviewID);
 
     if ($stmt->execute()) {
-        // Success message and redirect
         $stmt->close();
         mysqli_close($conn);
-        header("Location: manage-review.php?msg=deleted");
+        echo "<script>
+                alert('Review deleted successfully!');
+                window.location.href = 'manage-review.php';
+              </script>";
         exit();
     } else {
-        // Error handling
         $stmt->close();
         mysqli_close($conn);
-        header("Location: manage-review.php?msg=error");
+        echo "<script>
+                alert('Failed to delete review. Please try again.');
+                window.location.href = 'manage-review.php';
+              </script>";
         exit();
     }
 } else {
-    // If no valid ID, redirect back with an error
-    header("Location: manage-review.php?msg=invalid");
+    // If no valid ID, show error message and redirect
+    echo "<script>
+            alert('Invalid review ID.');
+            window.location.href = 'manage-review.php';
+          </script>";
     exit();
 }
 ?>

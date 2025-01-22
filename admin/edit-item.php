@@ -60,8 +60,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->bind_param("isss", $categoryID, $description, $imagePath, $itemID);
 
     if ($stmt->execute()) {
-        header("Location: manage-item.php");
-        echo "Item updated successfully!";
+        
+        echo "<script>
+                alert('Item edited successfully!');
+                window.location.href = 'manage-item.php';
+              </script>";
     } else {
         echo "Error updating item: " . $conn->error;
     }

@@ -15,8 +15,11 @@ if (isset($_GET['message'])) {
 }
 
 if (isset($_GET['message'])) {
-    echo "<div class='notification success'>" . $_GET['message'] . "</div>";
-}gg
+    echo "<script>
+                alert('edit successfully!');
+                window.location.href = 'manage-users.php';
+              </script>";
+}
 ?>
 
 <!DOCTYPE html>

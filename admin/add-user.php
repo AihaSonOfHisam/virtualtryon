@@ -24,8 +24,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Execute the query
         if ($stmt->execute()) {
             // Redirect to manage-users.php after success
-            header("Location: manage-users.php");
-            exit;
+           echo  "<script>
+                alert('Add account successfully.');
+                window.location.href = 'manage-users.php';
+              </script>";
         } else {
             echo "Error: " . $stmt->error;
         }

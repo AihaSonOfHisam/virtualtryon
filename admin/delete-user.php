@@ -18,8 +18,10 @@ if (isset($_GET['id'])) {
         // Execute the query
         if ($stmt->execute()) {
             // Redirect to the manage-users page with a success message
-            header("Location: manage-users.php?message=Delete success!");
-            exit;
+            echo "<script>
+                alert('delete successfully!');
+                window.location.href = 'manage-users.php';
+              </script>"; 
         } else {
             echo "Error: " . $stmt->error;
         }

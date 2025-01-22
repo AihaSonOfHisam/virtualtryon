@@ -84,6 +84,7 @@ if (!$result) {
                                 <button class="edit-btn">Edit</button>
                             </a>
                             <button class="delete-btn" onclick="deleteItem(<?php echo $row['itemID']; ?>)">Delete</button>
+
                         </td>
                     </tr>
                 <?php } ?>

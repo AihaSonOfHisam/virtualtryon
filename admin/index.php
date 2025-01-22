@@ -8,9 +8,10 @@ $totalCategoryQuery = "SELECT COUNT(*) AS total FROM category";
 $totalCategoryResult = $conn->query($totalCategoryQuery);
 $totalCategory = $totalCategoryResult->fetch_assoc()['total'];
 
-$activeUsersQuery = "SELECT COUNT(*) AS active FROM account WHERE status = 'active'";
-$activeUsersResult = $conn->query($activeUsersQuery);
-$activeUsers = $activeUsersResult->fetch_assoc()['active'];
+// Count the total number of accounts (no filter)
+$totalAccountsQuery = "SELECT COUNT(*) AS total FROM account";
+$totalAccountsResult = $conn->query($totalAccountsQuery);
+$totalAccounts = $totalAccountsResult->fetch_assoc()['total'];
 
 $totalItemsQuery = "SELECT COUNT(*) AS total FROM item";
 $totalItemsResult = $conn->query($totalItemsQuery);
@@ -54,8 +55,8 @@ $totalReviews = $totalReviewsResult->fetch_assoc()['total'];
           <p><?php echo $totalCategory; ?></p>
         </div>
         <div class="stat-item">
-          <h3>Active Users</h3>
-          <p><?php echo $activeUsers; ?></p>
+          <h3>Total Account</h3>
+          <p><?php echo $totalAccounts; ?></p>
         </div>
         <div class="stat-item">
           <h3>Total Items</h3>

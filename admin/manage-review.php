@@ -6,6 +6,8 @@ include '../component/connect.php';
 $query = "SELECT reviewID, custName, rating, image, descReview FROM review";
 $result = mysqli_query($conn, $query);
 
+
+
 if (!$result) {
     die("Error fetching reviews: " . mysqli_error($conn));
 }
@@ -77,10 +79,11 @@ if (!$result) {
                         <td><?php echo htmlspecialchars($row['descReview']); ?></td>
                         <td>
                             <div class="actions">
-                                
-                                <a href="delete-review.php?id=<?php echo $row['reviewID']; ?>" onclick="return confirm('Are you sure you want to delete this review?')">
-                                    <button class="delete-btn">Delete</button>
-                                </a>
+                             <a href="delete-review.php?id=<?php echo (int)$row['reviewID']; ?>" 
+                             onclick="return confirm('Are you sure you want to delete this review?')">
+                             <button class="delete-btn">Delete</button>
+</a>
+
                             </div>
                         </td>
                     </tr>
