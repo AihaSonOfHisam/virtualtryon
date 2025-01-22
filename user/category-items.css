@@ -142,3 +142,26 @@ footer {
     font-size: 14px;
     color: #333;
 }
+
+.search-bar button {
+    background-color: #5e4caf; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 10px 20px; /* Some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Get the element to line up correctly */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.search-bar button:hover {
+    background-color: #4557a0; /* Darker green on hover */
+}
+
+main h2 {
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Add some top margin */
+}

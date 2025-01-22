@@ -57,9 +57,14 @@ $conn->close();
         <div class="logo">
             <img src="images/logo.png" alt="Virtual Try On Logo">
         </div>
+        
         <div class="search-bar">
-            <input type="text" placeholder="Search By Typing Keywords...">
+            <form action="search.php" method="GET">
+                <input type="text" name="query" placeholder="Search By Typing Keywords...">
+                <button type="submit">Search</button>
+            </form>
         </div>
+        
         <div class="account">
             <img src="images/account-logo.png" alt="Account Icon">
             <a href="userprofile.php"><span>Account</span> </a>
