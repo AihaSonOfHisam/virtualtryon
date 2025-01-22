@@ -17,7 +17,7 @@ if (!$result) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Item</title>
-    <link rel="stylesheet" href="resources/css/add-item.css">
+    <link rel="stylesheet" href="resources/css/add-item.css">>
 </head>
 <body>
     <!-- Sidebar -->

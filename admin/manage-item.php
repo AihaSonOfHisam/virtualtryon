@@ -18,6 +18,16 @@ if (!$result) {
     die("Error fetching items: " . mysqli_error($conn));
 }
 
+// Check if the status is set in the URL
+if (isset($_GET['status'])) {
+    $status = $_GET['status'];
+    if ($status == 'success') {
+        echo "<script>alert('Item successfully added!');</script>";
+    } elseif ($status == 'error') {
+        echo "<script>alert('Error adding item. Please try again.');</script>";
+    }
+}
+
 ?>
 
 <!DOCTYPE html>

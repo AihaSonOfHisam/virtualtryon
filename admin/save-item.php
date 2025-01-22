@@ -13,10 +13,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Define the upload directory
     $uploadDir = 'resources/img/';
     $targetFile = $uploadDir . basename($itemImage);
-
+    
     // Validate inputs
     if (empty($categoryID) || empty($description) || empty($itemImage)) {
         echo "All fields are required!";
+        exit;
+    }
+
+    // Validate the image type and size
+    $allowedExtensions = ['jpg', 'jpeg', 'png', 'gif'];
+    $fileExtension = strtolower(pathinfo($itemImage, PATHINFO_EXTENSION));
+
+    // Check if the file has a valid extension
+    if (!in_array($fileExtension, $allowedExtensions)) {
+        echo "Invalid file type. Only JPG, JPEG, PNG, and GIF are allowed.";
+        exit;
+    }
+
+    // Check the file size (5MB max)
+    if ($_FILES['image']['size'] > 5 * 1024 * 1024) {
+        echo "The image file is too large. Maximum size is 5MB.";
         exit;
     }
 

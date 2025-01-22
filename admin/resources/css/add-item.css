@@ -47,6 +47,7 @@ body {
     display: block;
     padding: 15px 20px;
     width: 100%;
+    transition: background 0.3s ease;
 }
 
 .sidebar nav ul li a.active {
@@ -63,14 +64,13 @@ body {
     padding: 20px;
 }
 
-/* Header */
 header h1 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-/* Add User Form */
-.add-user-form {
+/* Table Form */
+.add-item-form {
     max-width: 600px;
     margin: 0 auto;
     background: white;
@@ -79,50 +79,81 @@ header h1 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Input Groups */
-.input-group {
-    margin-bottom: 15px;
+.add-item-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #4caf50;
 }
 
-.input-group label {
-    display: block;
+/* Table Styling */
+.add-item-form table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.add-item-form th,
+.add-item-form td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.add-item-form th {
+    background-color: #f4f4f9;
     font-weight: bold;
-    margin-bottom: 5px;
 }
 
-.input-group input,
-.input-group select,
-.input-group textarea {
+/* Form Inputs */
+.add-item-form input[type="text"],
+.add-item-form input[type="file"],
+.add-item-form textarea,
+.add-item-form select {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
-.input-group textarea {
+/* Description Textarea */
+.add-item-form textarea {
     resize: none;
 }
 
-/* Submit Button */
-.submit-btn {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
+/* Form Actions */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
 }
 
-.submit-btn:hover {
+/* Save Button */
+.save-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.save-btn:hover {
     background-color: #45a049;
 }
 
-/* Footer */
-footer {
-    margin-top: 30px;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #666;
+/* Cancel Link */
+.cancel-link {
+    text-decoration: none;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.cancel-link:hover {
+    color: #c0392b;
 }
