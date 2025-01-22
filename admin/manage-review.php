@@ -34,6 +34,7 @@ if (!$result) {
                 <li><a href="manage-category.php">Category</a></li>
                 <li><a href="manage-item.php">Item</a></li>
                 <li><a href="manage-review.php" class="active">Review</a></li>
+                <li><a href="tryon.php">Try On</a></li>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>
@@ -44,12 +45,6 @@ if (!$result) {
         <header>
             <h1>Manage Reviews</h1>
         </header>
-
-        <!-- Search Bar -->
-        <div class="search-bar">
-            <input type="text" placeholder="Search reviews by name or ID...">
-            <button>Search</button>
-        </div>
 
         <!-- Review Table -->
         <table class="review-table">

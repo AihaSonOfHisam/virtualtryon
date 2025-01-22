@@ -50,6 +50,7 @@ if (isset($_GET['categoryID'])) {
                 <li><a href="manage-category.php" class="active">Category</a></li>
                 <li><a href="manage-item.php">Item</a></li>
                 <li><a href="manage-review.php">Review</a></li>
+                <li><a href="tryon.php">Try On</a></li>
                 <li><a href="logout.html">Logout</a></li>
             </ul>
         </nav>
@@ -77,7 +78,7 @@ if (isset($_GET['categoryID'])) {
             </div>
             <div class="form-actions">
                 <button type="submit" class="save-btn">Save Changes</button>
-                <a href="manage-category.html" class="cancel-link">Cancel</a>
+                <a href="manage-category.php" class="cancel-link">Cancel</a>
             </div>
         </form>
     </div>

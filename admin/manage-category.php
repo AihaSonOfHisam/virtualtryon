@@ -48,6 +48,7 @@ if (isset($_GET['status'])) {
                 <li><a href="manage-category.php" class="active">Category</a></li>
                 <li><a href="manage-item.php">Item</a></li>
                 <li><a href="manage-review.php">Review</a></li>
+                <li><a href="tryon.php">Try On</a></li>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>

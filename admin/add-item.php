@@ -32,6 +32,7 @@ if (!$result) {
                 <li><a href="manage-category.php">Category</a></li>
                 <li><a href="manage-item.php" class="active">Item</a></li>
                 <li><a href="manage-review.php">Review</a></li>
+                <li><a href="tryon.php">Try On</a></li>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>

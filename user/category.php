@@ -59,7 +59,7 @@ if (!$result) {
     </main>
 
     <footer>
-        <p>&copy; 2024 Virtual Try On</p>
+        <center><p>&copy; 2024 Virtual Try On</p></center>
     </footer>
 </body>
 </html>

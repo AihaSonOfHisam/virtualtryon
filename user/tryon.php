@@ -172,12 +172,11 @@ if (isset($_GET['tryonID']) && is_numeric($_GET['tryonID'])) {
 
             <!-- Action Buttons -->
             <div class="model">
-                <form method="POST" enctype="multipart/form-data">
+            
+                    <a href="result-tryon.php">
                     <input type="submit" class="run-btn" value="Save & Try On" />
-                    <!-- Optional hidden input for itemID if needed -->
-                    <input type="hidden" name="itemID" value="NULL">
-                    <!-- Hidden input for tryonID (for image replacement) -->
-                    <input type="hidden" name="tryonID" value="<?php echo isset($tryonID) ? $tryonID : ''; ?>">
+            
+                </a>
                 </form>
             </div>
         </div>

@@ -28,9 +28,9 @@ $isLoggedIn = isset($_SESSION['custID']);
             <img src="images/account-logo.png" alt="Account Icon">
             <a href="userprofile.php"><span>Account</span> </a>
             <?php if ($isLoggedIn): ?>
-                <a href="login/logoutprocess.php" class="btn">Logout</a>
+                <a href="logoutprocess.php" class="btn">Logout</a>
             <?php else: ?>
-                <a href="login/login.php" class="btn">Login</a>
+                <a href="login.php" class="btn">Login</a>
             <?php endif; ?>
         </div>
     </header>

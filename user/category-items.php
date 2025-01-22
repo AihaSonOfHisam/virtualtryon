@@ -73,7 +73,7 @@ if (isset($_GET['categoryID'])) {
     </nav>
 
     <main>
-        <h1>Items in <?php echo htmlspecialchars($categoryName); ?> Category</h1>
+        <h1><?php echo htmlspecialchars($categoryName); ?> Category</h1>
 
         <div class="items-display">
             <?php while ($row = mysqli_fetch_assoc($result)) { ?>

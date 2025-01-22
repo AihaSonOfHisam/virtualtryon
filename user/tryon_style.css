@@ -181,3 +181,9 @@ input[type="file"] {
         width: 80%; /* Adjust the search input width for smaller screens */
     }
 }
+
+
+/* Remove underline from the anchor tag */
+a {
+    text-decoration: none;
+}

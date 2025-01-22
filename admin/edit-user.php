@@ -60,6 +60,7 @@ $conn->close();
         <li><a href="manage-category.php">Category</a></li>
         <li><a href="manage-item.php">Item</a></li>
         <li><a href="manage-review.php">Review</a></li>
+        <li><a href="tryon.php">Try On</a></li>
         <li><button class="logout">Logout</button></li>
       </ul>
     </nav>

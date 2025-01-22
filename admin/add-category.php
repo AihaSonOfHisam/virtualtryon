@@ -11,6 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Set the upload directory
     $upload_dir = 'resources/img/';
     $target_file = $upload_dir . basename($category_image);
+    
+
 
     // Upload the image
     if (move_uploaded_file($category_image_tmp, $target_file)) {
@@ -53,6 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <li><a href="manage-category.php" class="active">Category</a></li>
                 <li><a href="manage-item.php">Item</a></li>
                 <li><a href="manage-review.php">Review</a></li>
+                <li><a href="tryon.php">Try On</a></li>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>

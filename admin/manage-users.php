@@ -43,6 +43,7 @@ if (isset($_GET['message'])) {
                 <li><a href="manage-category.php">Category</a></li>
                 <li><a href="manage-item.php">Item</a></li>
                 <li><a href="manage-review.php">Review</a></li>
+                <li><a href="tryon.php">Try On</a></li>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>
@@ -60,11 +61,7 @@ if (isset($_GET['message'])) {
                 <a href="add-user.php" class="add-user-link">Add New User</a>
             </div>
 
-            <!-- Search Bar -->
-            <div class="search-bar">
-                <input type="text" id="search" placeholder="Search users by name, email, or role">
-                <button>Search</button>
-            </div>
+          
 
             <!-- User Table -->
             <table class="user-table">
