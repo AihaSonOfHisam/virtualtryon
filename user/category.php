@@ -26,7 +26,10 @@ if (!$result) {
             <img src="images/logo.png" alt="Virtual Try On Logo"> <!-- Adjusted path to logo -->
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="Search By Typing Keywords...">
+            <form action="search.php" method="GET">
+                <input type="text" name="query" placeholder="Search By Typing Keywords...">
+                <button type="submit">Search</button>
+            </form>
         </div>
         <div class="account">
             <a href="userprofile.php" class="account-link">

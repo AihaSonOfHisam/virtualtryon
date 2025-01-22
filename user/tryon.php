@@ -129,9 +129,14 @@ if (isset($_GET['tryonID']) && is_numeric($_GET['tryonID'])) {
         <div class="logo">
             <img src="images/logo.png" alt="Virtual Try On Logo">
         </div>
+        
         <div class="search-bar">
-            <input type="text" placeholder="Search By Typing Keywords...">
+            <form action="search.php" method="GET">
+                <input type="text" name="query" placeholder="Search By Typing Keywords...">
+                <button type="submit">Search</button>
+            </form>
         </div>
+        
         <div class="account">
             <a href="userprofile.php" class="account-link">
                 <img src="images/account-logo.png" alt="Account Icon">
