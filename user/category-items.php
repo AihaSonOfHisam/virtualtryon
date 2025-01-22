@@ -78,7 +78,7 @@ if (isset($_GET['categoryID'])) {
         <div class="items-display">
             <?php while ($row = mysqli_fetch_assoc($result)) { ?>
                 <div class="item">
-                    <img src="../admin/resources/img/<?php echo $row['itemImage']; ?>" alt="Item Image" width="150">
+                    <img src="images/<?php echo $row['itemImage']; ?>" alt="Item Image" width="150">
                     <p><?php echo htmlspecialchars($row['description']); ?></p>
                     <a href="item-detail.php?itemID=<?php echo $row['itemID']; ?>&categoryID=<?php echo $categoryID; ?>">View Details</a>
 

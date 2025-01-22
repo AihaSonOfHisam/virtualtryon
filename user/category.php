@@ -51,7 +51,7 @@ if (!$result) {
          <div class="category-display">
             <?php while ($row = mysqli_fetch_assoc($result)) { ?>
                 <a href="category-items.php?categoryID=<?php echo $row['categoryID']; ?>" class="category-item">
-                    <img src="../admin/resources/img/<?php echo $row['categoryImage']; ?>" alt="<?php echo htmlspecialchars($row['categoryName']); ?>">
+                    <img src="images/<?php echo $row['categoryImage']; ?>" alt="<?php echo htmlspecialchars($row['categoryName']); ?>">
                     <p><?php echo htmlspecialchars($row['categoryName']); ?></p>
                 </a>
             <?php } ?>
